@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Code Quiz Challenge</title>
+  <meta charset="UTF-8">
+  <link href="assets/styles.css" rel="stylesheet" type="text/css">
+  
+</head>
+
+<body>
+  <div id="nav">
+    <!-- highscores located on the left of navbar-->
+    <div class="left">
+      <a onclick="getScore()" href="#">
+        <h4>View Highscore</h4>
+      </a>
+    </div>
+    <!-- countdown timer on the top right of nav bar-->
+    <div class="right">
+      <h4>Time: <span id="timeLeft">0</span></h4>
+    </div>
+  </div>
+  <!--body of the quiz with start button-->
+  <div id="quiz">
+    <div id="quizBody">
+      <h1>
+        Coding Quiz Challenge!
+      </h1>
+      <h3>
+        Keep in mind that there is a timer and the timer will be reduced by 10 seconds for every wrong answer.
+      </h3>
+      <button onclick="start()">Start!</button>
+    </div>
+  </div>
+</body>
+<script src="script.js" type="text/javascript"></script>
+</html>
